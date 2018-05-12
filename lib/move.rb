@@ -18,12 +18,12 @@ input = gets
 
 input = ["1","2","3","4","5","6","7","8","9"]
 def input_to_index(input)
-  input = input.to_i - 1
+  input.to_i - 1
 end
 input_to_index(input)
 
 value = "X"
-def move(board, input, value = "X")
-board[input] = "X"
+def move(board, index, token = "X")
+board[index] = token
 end
-move(board, input, value = "X")
+move(board, index, token = "X")
